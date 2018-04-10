@@ -1,7 +1,7 @@
 ## Heart Beat Watson Machine Learning (WML)
 
 - A model setup on IBM Studio is needed to perform the prediction scoring of the beats per minute (bpm). (will post it - ipynb file)
-- Make use of [](https://github.com/hovig/gyro-watson-ml/blob/master/pulse-rate.csv)
+- Make use of [pulse-rate.csv](https://github.com/hovig/gyro-watson-ml/blob/master/pulse-rate.csv)
 
 > Fill in the credentials in .env.template and re-name to .env
 
