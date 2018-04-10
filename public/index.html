@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Watson ML Pulse</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css"></link>
+	<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body onload="bodyLoaded();">
+	<div align="center"><img src="/img/heart.png" id="imgLogo" height="120" width="120"></div>
+	<div class="main" align="center">
+		<div class="container">
+				<div id="header">Watson Machine Learning Predictive Pulse Rate
+				</div><div class="row">
+					<div class="input-field col s12">
+						<label for="heart_beats">Heart Beats</label>
+						<input id="heart_beats" type="number" value="7" required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<label for="time_in_secs">Seconds</label>
+						<input id="time_in_secs" type="number" value="6" required>
+					</div>
+				</div>
+				<div class="row">
+					<a id="submit" class="waves-effect waves-light btn">Submit</a>
+				</div>
+				<div id="loading" class="row" style="display: none;">
+					<div class="progress">
+						<div class="indeterminate"></div>
+					</div>
+				</div>
+				<div id="prediction" class="row" style="display: none;">
+					Pulse Rate Prediction: <span id="bpm"></span>
+				</div>
+			</div>
+	</div>
+	<div class="container" align="center"><div id="header"><u>General BPM Rates Info</u>
+		<table align="center">
+			<tr>
+				<td>BPM < 50 - Bradycardia<br>50 < BPM < 90 - Normal HR<br>BPM > 90 - Tachycardia</td>
+			</tr>
+		</table>
+		<h6><i><font color="blue">This is an approximated bpm app.</font></i></h6></div>
+	</div>
+</body>
+</html>
